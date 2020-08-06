@@ -1,0 +1,208 @@
+body {
+    box-sizing: border-box;
+    color: black;
+    font-size: 16px;
+    font-family: Roboto, sens-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+/*-headerTop-*/
+
+.header_top {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header_content {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.header_content_text {
+    text-align: center;
+    margin: 0 15px 0 15px;
+}
+
+.header_content_text span {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header_content_text p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header_logo {
+    height: 60px;
+    width: 60px;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header_top_rozvoz {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header_top_razvoz p {
+    font-size: 15px;
+}
+
+.header_top_razvoz a {
+    text-decoration: none;
+    font-size: 24px;
+    color: darkblue;
+    font-size: 600;
+    padding-bottom: 0;
+}
+
+.phone {
+    font-weight: 700;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: red;
+}
+
+.btn_header {
+    padding: 8px 15px 8px 15px;
+    background-color: rgb(255, 196, 0);
+    width: 90px;
+    border-radius: 10px;
+    border: 1px solid rgb(248, 205, 125);
+    box-shadow: grey 3px 3px 3px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn_header:hover {
+    background-color: rgb(252, 155, 0);
+    font-weight: 700;
+}
+
+
+/*-Navbar-*/
+
+nav {
+    padding: 10px;
+    border: 1px solid gold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid rgb(47, 0, 255);
+}
+
+.wrap_sticky {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.btn_header_nav {
+    padding: 13px 15px 8px 13px;
+    background-color: rgb(3, 192, 13);
+    width: 130px;
+    border-radius: 10px;
+    border: 1px solid rgb(150, 248, 125);
+    box-shadow: grey 3px 3px 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn_header:hover {
+    background-color: rgb(60, 185, 2);
+    font-weight: 700;
+}
+
+
+/*--carousel---*/
+
+
+/*--section2---*/
+
+.popular {
+    border-radius: 5px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popular_wrap {
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(117, 116, 116, 0.25), 0 10px 10px rgba(117, 116, 116, 0.22);
+    border-radius: 5px;
+    margin: 0 2vw 0 2vw;
+}
+
+.popular_wrap:hover {
+    box-shadow: 0 7px 12px rgba(117, 116, 116, 0.25), 0 5px 6px rgba(117, 116, 116, 0.22);
+}
+
+.popular_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 9px;
+}
+
+.popular_container img {
+    height: 90px;
+    width: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.items p {
+    font-weight: 700;
+}
+
+.items button {
+    border: rgb(248, 161, 0) 2px solid;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.items button:hover {
+    border: rgb(255, 209, 123) 2px solid;
+}
