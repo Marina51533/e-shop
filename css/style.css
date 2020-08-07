@@ -104,14 +104,12 @@ body {
 
 nav {
     padding: 10px;
-    border: 1px solid gold;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    border: 1px solid rgb(47, 0, 255);
 }
 
 .wrap_sticky {
