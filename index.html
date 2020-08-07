@@ -4,78 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' href='css/style.css'>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Pizza</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
 </head>
 
-<body { overflow-y: scroll; }>
-    <header>
-        <div class='wrapper'>
-            <div class='header_top'>
-                <div class='header_content'>
-                    <a href=''><img src='img/ostrich.jpg' class="header_logo" alt='logo'></a>
-                    <div class='header_content_text'>
-                        <p class='titel'><span>Momo Pizza</span><br>Pizza №1 v Praze</p>
-                    </div>
-                    <div class='header_top_rozvoz'>
-                        <p> Rozvoz pizzy do vašeho města <a href='#'>Praha</a></p>
-                        <p class='phone'>777-66-55</p>
-                    </div>
-                </div>
-                <div><button class='btn_header' value='Přihlášení'>Přihlášení</button></div>
+<body>
+
+
+
+
+    <div class='header_top'>
+        <div class='header_content'>
+            <a href=''><img src='img/ostrich.jpg' class="header_logo" alt='logo'></a>
+            <div class='header_content_text'>
+                <p class='titel'><span>Momo Pizza</span><br>Pizza №1 v Praze</p>
             </div>
-            <nav>
-                <div class='navbar'>
-                    <div class='wrap_sticky'>
-                        <ul>
-                            <a href='#'>
-                                <li>Kombo</li>
-                            </a>
-                            <a href='#'>
-                                <li>Pizza</li>
-                            </a>
-                            <a href='#'>
-                                <li>Občerstvení</li>
-                            </a>
-                            <a href='#'>
-                                <li>Dezerty</li>
-                            </a>
-                            <a href='#'>
-                                <li>Nápoje</li>
-                            </a>
-                            <a href='#'>
-                                <li>Jiné zboží</li>
-                            </a>
-                            <a href='#'>
-                                <li>Akce</li>
-                            </a>
-                            <a href='#'>
-                                <li>Kontakty</li>
-                            </a>
-                            <a href='#'>
-                                <li>O nás</li>
-                            </a>
+            <div class='header_top_rozvoz'>
+                <p> Rozvoz pizzy do vašeho města <a href='#'>Praha</a></p>
+                <p class='phone'>777-66-55</p>
+            </div>
+        </div>
+        <div><button class='btn_header' value='Přihlášení'>Přihlášení</button></div>
+    </div>
 
-                        </ul>
+    <div class='wrap_sticky'>
+        <ul>
+            <a href='#'>
+                <li>Kombo</li>
+            </a>
+            <a href='#'>
+                <li>Pizza</li>
+            </a>
+            <a href='#'>
+                <li>Občerstvení</li>
+            </a>
+            <a href='#'>
+                <li>Dezerty</li>
+            </a>
+            <a href='#'>
+                <li>Nápoje</li>
+            </a>
+            <a href='#'>
+                <li>Jiné zboží</li>
+            </a>
+            <a href='#'>
+                <li>Akce</li>
+            </a>
+            <a href='#'>
+                <li>Kontakty</li>
+            </a>
+            <a href='#'>
+                <li>O nás</li>
+            </a>
 
-                        <div><button class='btn_header_nav'>Košík</button></div>
-                    </div>
+        </ul>
 
-                </div>
+        <div><button class='btn_header_nav'>Košík</button></div>
+    </div>
 
 
 
-            </nav>
-
-    </header>
     <main>
         <section>
+            <div class="owl-carousel">
+                <div><img src='img/junkfood.jpg'></div>
+                <div><img src='img/junkfood2.jpg'></div>
+                <div><img src='img/junkfood3.jpg'></div>
+                <div><img src='img/junkfood4.jpg'></div>
+
+
+            </div>
 
         </section>
-        <section class='popular'>
-            <div class='popular_wrap' id='popular'>
+        <h2>New and popular</h2>
+        <section class='popular' id='popular'>
+
+            <div class='popular_wrap js_pop_up' id='popular'>
+
                 <div class='popular_container'>
                     <img src='img/cola_pizza2.jpg'>
 
@@ -83,6 +93,19 @@
                         <p>Cola & pizza</p>
                         <button class='btn_popular'>235 Kč</button>
                     </div>
+                </div>
+            </div>
+            <div class='overlay js_overlay'>
+                <div class='popup js_popup'>
+                    <div><img src='img/obcerstveni.jpeg'></div>
+                    <div class='popup_content'>
+                        <div>
+                            <h2>Pizza Margarita</h2>
+                            <p>Slozeni:</p>
+                        </div>
+                        <div><button class='btn_popup'>I want it!</button></div>
+                    </div>
+                    <div class='close_popup js_close'></div>
                 </div>
             </div>
             <div class='popular_wrap' id='popular'>
@@ -130,11 +153,265 @@
 
 
         </section>
-        <section class='content2_kombo'></section>
+        <h2>Set</h2>
+        <section class='content2_kombo' id='combo'>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/cola_pizza.png'>
+                <h3>Kombo 299 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+
+            <div class='main_items'>
+                <img class='main_items_img' src='img/cola_pizza.png'>
+                <h3>Kombo 299 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/cola_pizza.png'>
+                <h3>Kombo 299 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/cola_pizza.png'>
+                <h3>Kombo 299 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/cola_pizza.png'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/cola_pizza.png'>
+                <h3>Kombo 299 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/cola_pizza.png'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/cola_pizza.png'>
+                <h3>Kombo 299 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+
+        </section>
+        <h2>Pizza</h2>
+        <section class='content2_kombo' id='combo'>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/pizza_for_site.jpg'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+
+            <div class='main_items'>
+                <img class='main_items_img' src='img/pizza_for_site2.jpg'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/pizza_for_site.jpg'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/pizza_for_site2.jpg'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/pizza_for_site.jpg'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/pizza_for_site2.jpg'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/pizza_for_site.jpg'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/pizza_for_site2.jpg'>
+                <h3>Pizza 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+
+        </section>
+        <h2>Obcerstveni</h2>
+        <section class='content2_kombo' id='combo'>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/obcerstveni.jpeg'>
+                <h3>This 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+
+            <div class='main_items'>
+                <img class='main_items_img' src='img/obcerstveni.jpeg'>
+                <h3>This 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img//obcerstveni.jpeg'>
+                <h3>This 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/obcerstveni.jpeg'>
+                <h3>This 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/obcerstveni.jpeg'>
+                <h3>This 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/obcerstveni.jpeg'>
+                <h3>This 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/obcerstveni.jpeg'>
+                <h3>This 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+            <div class='main_items'>
+                <img class='main_items_img' src='img/obcerstveni.jpeg'>
+                <h3>This 205 Kc</h3>
+
+                <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
+                <div class='main_items_footer'>
+                    <p class='price'>299 Kc</p>
+                    <button class='btn_main_items'>I want it!</button>
+                </div>
+            </div>
+
         </section>
     </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src='js/JQuery.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
     <script src='js/main.js'></script>
 
 </body>
