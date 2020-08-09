@@ -10,5 +10,20 @@ $(document).ready(function() {
         lazyLoad: true,
 
     });
+    /*-open with .items and add blur-*/
+    $('.items').click(function() {
+            $('main').css('filter', 'blur(5px)');
+            $('.js_overlay').fadeIn();
+
+
+            $('.js_overlay').addClass('disabled');
+        })
+        /*-close-*/
+    $('.js_close').click(function() {
+
+        $('.js_overlay').fadeOut();
+        $('main').css('filter', 'none');
+    })
+
 
 });

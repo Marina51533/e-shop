@@ -8,7 +8,8 @@ body {
 }
 
 h2 {
-    padding-left: 50px;
+    padding-left: 8vw;
+    font-size: 2em;
 }
 
 
@@ -174,13 +175,72 @@ h2 {
 
 .overlay {
     position: absolute;
-    width: 40vw;
-    height: 40vw;
-    left: 0;
-    top: 0;
-    /*display: none;*/
-    background-color: hotpink;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+    background-color: rgb(252, 250, 251);
     border-radius: 15px;
+}
+
+.popup img {
+    height: 230px;
+    width: 300px;
+    margin-left: 7vw;
+}
+
+.popup_content {
+    text-align: center;
+}
+
+.btn_popup {
+    border: rgb(248, 161, 0) 2px solid;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn_popup:hover {
+    border: rgb(255, 209, 123) 2px solid;
+}
+
+.close_popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.close_popup::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 1px;
+    top: 11px;
+    width: 31px;
+    height: 1px;
+    transform: rotate(-45deg);
+    left: -4px;
+}
+
+.close_popup::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 1px;
+    top: 11px;
+    width: 31px;
+    height: 1px;
+    transform: rotate(45deg);
+    left: -4px;
 }
 
 
