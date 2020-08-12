@@ -35,54 +35,81 @@ var secondItem = 0
 var thirdItem = 0
 var fourthItem = 0
 var fifthItem = 0
-id_btn_popular.onclick = function() {
-    var valueBtn = document.getElementById('id_btn_popular').innerHTML
-    var valueBtn = parseInt(valueBtn)
-    var kosik = document.querySelector('#kosik')
-    s = s + valueBtn
-    i++
-    kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-    firstItem++
-    arrayBtn[0] = firstItem
+var valueBtn = 0
+var kosik = 0
 
+popular1.onclick = function(event) {
+        var checkOnClick = event.target.parentNode.childNodes[3].tagName
+        console.log(checkOnClick)
+        if (checkOnClick == 'BUTTON' && checkOnClick != 'P') {
+            valueBtn = event.target.parentNode.childNodes[3].innerHTML /*potomok*/
+                // console.log(event.target.parentNode.childNodes[3].tagName)
+                //console.log(event.currentTarget.tagName)/*roditelskij element*/
+            valueBtn = parseInt(valueBtn)
+            kosik = document.querySelector('#kosik')
+            s = s + valueBtn
+            i++
+            kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
+
+        }
+    }
+    /*
+    id_btn_popular.onclick = function() {
+        valueBtn = document.getElementById('id_btn_popular').innerHTML
+        valueBtn = parseInt(valueBtn)
+        kosik = document.querySelector('#kosik')
+        s = s + valueBtn
+        i++
+        kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
+        firstItem++
+        arrayBtn[0] = firstItem
+
+    }*/
+
+/*login Form*/
+// Get this modal window
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    /*-add prices from items Set*/
+combo.onclick = function(event) {
+    if (event.target.parentNode.childNodes[1].tagName == 'P') {
+        valueBtn = event.target.parentNode.childNodes[1].innerHTML /*potomok*/
+            //console.log(event.currentTarget.tagName)/*roditelskij element*/
+        valueBtn = parseInt(valueBtn)
+        kosik = document.querySelector('#kosik')
+        s = s + valueBtn
+        i++
+        kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
+
+    }
 }
-id_btn_popular1.onclick = function() {
-    valueBtn = document.getElementById('id_btn_popular1').innerHTML
-    valueBtn = parseInt(valueBtn)
-    kosik = document.querySelector('#kosik')
-    s = s + valueBtn
-    i++
-    kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-    secondItem++
-    arrayBtn[1] = secondtItem
+pizza.onclick = function(event) {
+    if (event.target.parentNode.childNodes[1].tagName == 'P') {
+        valueBtn = event.target.parentNode.childNodes[1].innerHTML /*potomok*/
+            //console.log(event.currentTarget.tagName)/*roditelskij element*/
+        valueBtn = parseInt(valueBtn)
+        kosik = document.querySelector('#kosik')
+        s = s + valueBtn
+        i++
+        kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
+
+    }
 }
-id_btn_popular2.onclick = function() {
-    valueBtn = document.getElementById('id_btn_popular2').innerHTML
-    valueBtn = parseInt(valueBtn)
-    kosik = document.querySelector('#kosik')
-    s = s + valueBtn
-    i++
-    kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-    thirdItem++
-    arrayBtn[2] = thirdItem
-}
-id_btn_popular3.onclick = function() {
-    valueBtn = document.getElementById('id_btn_popular3').innerHTML
-    valueBtn = parseInt(valueBtn)
-    kosik = document.querySelector('#kosik')
-    s = s + valueBtn
-    i++
-    kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-    fourthItem++
-    arrayBtn[3] = fourthItem
-}
-id_btn_popular4.onclick = function() {
-    valueBtn = document.getElementById('id_btn_popular4').innerHTML
-    valueBtn = parseInt(valueBtn)
-    kosik = document.querySelector('#kosik')
-    s = s + valueBtn
-    i++
-    kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-    fifthItem++
-    arrayBtn[4] = fifthItem
+obcerstveni.onclick = function(event) {
+    if (event.target.parentNode.childNodes[1].tagName == 'P') {
+        valueBtn = event.target.parentNode.childNodes[1].innerHTML /*potomok*/
+            //console.log(event.currentTarget.tagName)/*roditelskij element*/
+        valueBtn = parseInt(valueBtn)
+        kosik = document.querySelector('#kosik')
+        s = s + valueBtn
+        i++
+        kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
+
+    }
 }
