@@ -11,13 +11,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <script src="https://kit.fontawesome.com/7e14270fdf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-
-
-
     <div class='header_top'>
         <div class='header_content'>
             <a href=''><img src='img/ostrich.jpg' class="header_logo" alt='logo'></a>
@@ -35,7 +32,6 @@
     <!-- Modal popup -->
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть модальный">&times;</span>
-
         <!-- Modal content -->
         <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">
@@ -49,14 +45,14 @@
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Add your password" name="psw" required>
 
-                <button class='btn_singin' type="submit">Sing in</button>
+                <button class='btnModal btn_singin' type="submit">Sing in</button>
                 <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
             </div>
 
             <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btnModal">Отменить</button>
                 <span class="psw">Forgot <a href="#">your password?</a></span>
             </div>
         </form>
@@ -93,11 +89,8 @@
 
         </ul>
 
-        <div><button id='kosik' class='btn_header_nav'>Košík</button></div>
+        <div><button id='kosik' class='btn_header_nav'><i class="fas fa-cart-arrow-down"></i> Kosik</button></div>
     </div>
-
-
-
     <main>
         <section>
             <div class="owl-carousel">
@@ -105,37 +98,18 @@
                 <div><img src='img/junkfood2.jpg'></div>
                 <div><img src='img/junkfood3.jpg'></div>
                 <div><img src='img/junkfood4.jpg'></div>
-
-
             </div>
 
         </section>
         <h2>New and popular</h2>
         <section class='popular' id='popular1'>
-
-            <div class='popular_wrap js_pop_up'>
-
+            <div class='popular_wrap'>
                 <div class='popular_container'>
                     <img src='img/cola_pizza2.jpg'>
-
                     <div class='items'>
                         <p style='color:green'>Cola & pizza</p>
                         <button id='id_btn_popular' class='btn_popular'>235 Kč</button>
                     </div>
-                </div>
-            </div>
-            <div class='overlay js_overlay'>
-                <div class='popup js_popup'>
-                    <div><img src='img/obcerstveni.jpeg'></div>
-                    <div class='popup_content'>
-                        <div>
-                            <h2>Pizza Sýrová</h2>
-                            <h4>Složení:</h4>
-                            <p>tomato, gouda, granbiraghi, sýr s modrou plísní, mozzarella, smetana<br> alergeny: Obiloviny obsahující lepek; Mléko a výrobky z něj</p>
-                        </div>
-                        <div><button class='btn_popup'>I want it!</button></div>
-                    </div>
-                    <div class='close_popup js_close'></div>
                 </div>
             </div>
             <div class='popular_wrap'>
@@ -178,15 +152,11 @@
                     </div>
                 </div>
             </div>
-
-
-
-
         </section>
         <h2>Set</h2>
         <section class='content2_kombo ' id='combo'>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/cola_pizza.png '>
+                <img class='main_items_img ' src='img/cola_pizza2.jpg '>
                 <h3>Kombo 1</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -197,7 +167,7 @@
             </div>
 
             <div class='main_items '>
-                <img class='main_items_img ' src='img/cola_pizza.png '>
+                <img class='main_items_img ' src='img/cola_pizza2.jpg '>
                 <h3>Kombo 654 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -207,7 +177,7 @@
                 </div>
             </div>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/cola_pizza.png '>
+                <img class='main_items_img ' src='img/cola_pizza2.jpg '>
                 <h3>Kombo 299 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -217,7 +187,7 @@
                 </div>
             </div>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/cola_pizza.png '>
+                <img class='main_items_img ' src='img/cola_pizza2.jpg'>
                 <h3>Kombo 299 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -227,7 +197,7 @@
                 </div>
             </div>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/cola_pizza.png '>
+                <img class='main_items_img ' src='img/cola_pizza2.jpg '>
                 <h3>Pizza 205 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -237,7 +207,7 @@
                 </div>
             </div>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/cola_pizza.png '>
+                <img class='main_items_img ' src='img/cola_pizza2.jpg'>
                 <h3>Kombo 299 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -247,7 +217,7 @@
                 </div>
             </div>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/cola_pizza.png '>
+                <img class='main_items_img ' src='img/cola_pizza2.jpg '>
                 <h3>Pizza 205 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -257,7 +227,7 @@
                 </div>
             </div>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/cola_pizza.png '>
+                <img class='main_items_img ' src='img/cola_pizza2.jpg '>
                 <h3>Kombo 299 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -282,7 +252,7 @@
             </div>
 
             <div class='main_items '>
-                <img class='main_items_img ' src='img/pizza_for_site2.jpg '>
+                <img class='main_items_img ' src='img/pizza_for_site.jpg'>
                 <h3>Pizza 205 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -302,7 +272,7 @@
                 </div>
             </div>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/pizza_for_site2.jpg '>
+                <img class='main_items_img ' src='img/pizza_for_site.jpg '>
                 <h3>Pizza 205 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>
@@ -322,7 +292,7 @@
                 </div>
             </div>
             <div class='main_items '>
-                <img class='main_items_img ' src='img/pizza_for_site2.jpg '>
+                <img class='main_items_img ' src='img/pizza_for_site.jpg '>
                 <h3>Pizza 205 Kc</h3>
 
                 <p>This is one of the best and most delicious pizza in the world + 2 Colas</p>

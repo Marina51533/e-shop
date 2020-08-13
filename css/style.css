@@ -94,12 +94,16 @@ h2 {
     cursor: pointer;
     opacity: 0.8;
     margin-top: 20px;
+    outline: none;
 }
 
 .btn_header:hover {
     background-color: rgb(252, 155, 0);
     font-weight: 700;
 }
+
+
+/*-Dropdown*/
 
 
 /*Login popup*/
@@ -130,7 +134,7 @@ input[type=password] {
 
 /* style for btn */
 
-button {
+.btnModal {
     background-color: #4CAF50;
     color: black;
     padding: 14px 20px;
@@ -144,7 +148,7 @@ button {
 
 /* Hover for btns */
 
-button:hover {
+.btnModal:hover {
     opacity: 0.8;
 }
 
@@ -321,11 +325,13 @@ span.psw {
     font-size: 14px;
     cursor: pointer;
     margin-right: 5px;
+    outline: none;
 }
 
-.btn_header:hover {
-    background-color: rgb(60, 185, 2);
+.btn_header_nav:hover {
+    background-color: rgb(252, 217, 21);
     font-weight: 700;
+    border: 1px solid rgb(248, 226, 125);
 }
 
 
@@ -344,79 +350,6 @@ span.psw {
     margin: 0;
     padding: 0;
     border-radius: 10px;
-}
-
-
-/*-popup--*/
-
-.overlay {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    box-sizing: border-box;
-    display: none;
-    background-color: rgb(252, 250, 251);
-    border-radius: 15px;
-}
-
-.popup img {
-    height: 230px;
-    width: 300px;
-    margin-left: 7vw;
-}
-
-.popup_content {
-    text-align: center;
-}
-
-.btn_popup {
-    border: rgb(248, 161, 0) 2px solid;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.btn_popup:hover {
-    border: rgb(255, 209, 123) 2px solid;
-}
-
-.close_popup {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 23px;
-    height: 23px;
-    cursor: pointer;
-}
-
-.close_popup::before {
-    content: '';
-    position: absolute;
-    background-color: black;
-    top: 1px;
-    top: 11px;
-    width: 31px;
-    height: 1px;
-    transform: rotate(-45deg);
-    left: -4px;
-}
-
-.close_popup::after {
-    content: '';
-    position: absolute;
-    background-color: black;
-    top: 1px;
-    top: 11px;
-    width: 31px;
-    height: 1px;
-    transform: rotate(45deg);
-    left: -4px;
 }
 
 
@@ -473,11 +406,11 @@ span.psw {
 }
 
 
-/*---section2---*/
+/*---section3 Combo---*/
 
 .content2_kombo {
     height: fit-content;
-    background-color: rgb(247, 247, 248);
+    background-color: rgb(255, 255, 255);
     width: 1024px;
     margin: 0 auto;
     display: flex;
@@ -500,6 +433,7 @@ span.psw {
     width: 140px;
     margin-top: 15px;
     transition: 1s;
+    border-radius: 50%;
 }
 
 .main_items_img:hover {
