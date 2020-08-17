@@ -94,6 +94,12 @@ $('.popular .items > .btn_popular').click((event) => {
     // Пример: 235
     const buttonPrice = parseInt(buttonText);
 
+    // Получаем итоговую сумму корзины
+    // Пример: 0 
+    const kosikText = $('#kosik-price').html();
+    const kosikPrice = parseInt(kosikText);
+
     // TODO: добавить в корзину
     console.log('buttonPrice =', buttonPrice);
+    console.log('kosikPrice =', kosikPrice);
   });
