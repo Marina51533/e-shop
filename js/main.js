@@ -23,24 +23,6 @@ var fifthItem = 0
 var valueBtn = 0
 var kosik = 0
 
-//
-// TODO: перенести алгоритм добавления в корзину, затем удалить
-//
-
-// popular1.onclick = function(event) {
-//         var checkOnClick = event.target.parentNode.childNodes[3].tagName
-//         console.log(checkOnClick)
-//         if (checkOnClick == 'BUTTON' && checkOnClick != 'P') {
-//             valueBtn = event.target.parentNode.childNodes[3].innerHTML /*potomok*/
-//             valueBtn = parseInt(valueBtn)
-//             kosik = document.querySelector('#kosik')
-//             s = s + valueBtn
-//             i++
-//             kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-
-//         }
-//     }
-
 // Get this modal window
 var modal = document.getElementById('id01');
 
