@@ -86,7 +86,14 @@ obcerstveni.onclick = function(event) {
 }
 
 $('.popular .items > .btn_popular').click((event) => {
-    console.log('Я тут');
-    console.log(event.target);
+    // Извлекаем внутренний HTML кноки
+    // Пример: 235 Kč
+    const buttonText = $(event.target).html();
+
+    // Преобразовуем строку к числу
+    // Пример: 235
+    const buttonPrice = parseInt(buttonText);
+
     // TODO: добавить в корзину
+    console.log('buttonPrice =', buttonPrice);
   });
