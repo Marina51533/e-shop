@@ -99,7 +99,13 @@ $('.popular .items > .btn_popular').click((event) => {
     const kosikText = $('#kosik-price').html();
     let kosikPrice = parseInt(kosikText);
 
+    // Получаем кол-во товаров в корзине
+    // Пример: 0 
+    let kosikCount = parseInt($('#kosik-count').html());
+
     // Складывает значение и выводим итоговое значение в kosik-price
     kosikPrice = kosikPrice + buttonPrice;
+    kosikCount = kosikCount + 1;
     $('#kosik-price').html(kosikPrice);
+    $('#kosik-count').html(kosikCount);
   });
