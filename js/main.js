@@ -10,23 +10,8 @@ $(document).ready(function() {
         lazyLoad: true,
 
     });
-    /*-open with .items and add blur-*/
-    /* $('.items').click(function() {
-             $('main').css('filter', 'blur(5px)');
-             $('.js_overlay').fadeIn();
-
-
-             $('.js_overlay').addClass('disabled');
-         })
-         /*-close-*/
-    /*$('.js_close').click(function() {
-
-        $('.js_overlay').fadeOut();
-        $('main').css('filter', 'none');
-    })*/
-
-
 });
+
 var s = 0
 var i = 0
 var arrayBtn = []
@@ -43,8 +28,6 @@ popular1.onclick = function(event) {
         console.log(checkOnClick)
         if (checkOnClick == 'BUTTON' && checkOnClick != 'P') {
             valueBtn = event.target.parentNode.childNodes[3].innerHTML /*potomok*/
-                // console.log(event.target.parentNode.childNodes[3].tagName)
-                //console.log(event.currentTarget.tagName)/*roditelskij element*/
             valueBtn = parseInt(valueBtn)
             kosik = document.querySelector('#kosik')
             s = s + valueBtn
@@ -53,20 +36,7 @@ popular1.onclick = function(event) {
 
         }
     }
-    /*
-    id_btn_popular.onclick = function() {
-        valueBtn = document.getElementById('id_btn_popular').innerHTML
-        valueBtn = parseInt(valueBtn)
-        kosik = document.querySelector('#kosik')
-        s = s + valueBtn
-        i++
-        kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-        firstItem++
-        arrayBtn[0] = firstItem
 
-    }*/
-
-/*login Form*/
 // Get this modal window
 var modal = document.getElementById('id01');
 
@@ -80,7 +50,6 @@ window.onclick = function(event) {
 combo.onclick = function(event) {
     if (event.target.parentNode.childNodes[1].tagName == 'P') {
         valueBtn = event.target.parentNode.childNodes[1].innerHTML /*potomok*/
-            //console.log(event.currentTarget.tagName)/*roditelskij element*/
         valueBtn = parseInt(valueBtn)
         kosik = document.querySelector('#kosik')
         s = s + valueBtn
@@ -92,7 +61,6 @@ combo.onclick = function(event) {
 pizza.onclick = function(event) {
     if (event.target.parentNode.childNodes[1].tagName == 'P') {
         valueBtn = event.target.parentNode.childNodes[1].innerHTML /*potomok*/
-            //console.log(event.currentTarget.tagName)/*roditelskij element*/
         valueBtn = parseInt(valueBtn)
         kosik = document.querySelector('#kosik')
         s = s + valueBtn
@@ -104,7 +72,6 @@ pizza.onclick = function(event) {
 obcerstveni.onclick = function(event) {
     if (event.target.parentNode.childNodes[1].tagName == 'P') {
         valueBtn = event.target.parentNode.childNodes[1].innerHTML /*potomok*/
-            //console.log(event.currentTarget.tagName)/*roditelskij element*/
         valueBtn = parseInt(valueBtn)
         kosik = document.querySelector('#kosik')
         s = s + valueBtn
