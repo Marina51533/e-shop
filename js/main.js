@@ -9,24 +9,26 @@ $(document).ready(function() {
         autoplayHoverPause: true,
         lazyLoad: true,
 
+
     });
-    /*-open with .items and add blur-*/
-    /* $('.items').click(function() {
-             $('main').css('filter', 'blur(5px)');
-             $('.js_overlay').fadeIn();
+    /* var totalPrise = 0;
+     var totalItems = 0;*/
+    /* $('.popular .items > .btn_popular').click((event) => {
+         // $('.btn_popular').appendTo($('.btn_header_nav'))
+         var $elem = $(this);
+         var value = $elem.val();
+         $elem.val(value * value);
+     });*/
 
+    $('.popular .items > .btn_popular').click((event) => {
+        var $elem = $(this).val()
+        console.log($elem);
 
-             $('.js_overlay').addClass('disabled');
-         })
-         /*-close-*/
-    /*$('.js_close').click(function() {
+        // TODO: добавить в корзину
 
-        $('.js_overlay').fadeOut();
-        $('main').css('filter', 'none');
-    })*/
-
-
+    });
 });
+
 var s = 0
 var i = 0
 var arrayBtn = []
@@ -38,33 +40,23 @@ var fifthItem = 0
 var valueBtn = 0
 var kosik = 0
 
-popular1.onclick = function(event) {
-        var checkOnClick = event.target.parentNode.childNodes[3].tagName
-        console.log(checkOnClick)
-        if (checkOnClick == 'BUTTON' && checkOnClick != 'P') {
-            valueBtn = event.target.parentNode.childNodes[3].innerHTML /*potomok*/
-                // console.log(event.target.parentNode.childNodes[3].tagName)
-                //console.log(event.currentTarget.tagName)/*roditelskij element*/
-            valueBtn = parseInt(valueBtn)
-            kosik = document.querySelector('#kosik')
-            s = s + valueBtn
-            i++
-            kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-
-        }
-    }
-    /*
-    id_btn_popular.onclick = function() {
-        valueBtn = document.getElementById('id_btn_popular').innerHTML
-        valueBtn = parseInt(valueBtn)
+/*popular1.onclick = function(event) {
+    var checkOnClick = event.target.parentNode.childNodes[3].tagName
+    console.log(checkOnClick)
+    if (checkOnClick == 'BUTTON' && checkOnClick != 'P') {
+        valueBtn = event.target.parentNode.childNodes[3].innerHTML /*potomok*/
+// console.log(event.target.parentNode.childNodes[3].tagName)
+//console.log(event.currentTarget.tagName)/*roditelskij element*/
+/*valueBtn = parseInt(valueBtn)
         kosik = document.querySelector('#kosik')
         s = s + valueBtn
         i++
         kosik.innerHTML = '   count: ' + i + '<br>  ' + s + 'Kč  '
-        firstItem++
-        arrayBtn[0] = firstItem
 
-    }*/
+    }
+}*/
+
+
 
 /*login Form*/
 // Get this modal window
