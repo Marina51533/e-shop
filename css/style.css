@@ -461,3 +461,23 @@ span.psw {
     font-size: 16px;
     font-weight: 600;
 }
+/*email*/
+.email{
+    height: 10vh;
+    background-color: orange;
+    padding:1vh 25vw 1vh 15vw;
+    margin-top: 10vh;
+}
+.email_send{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/*footer*/
+footer{
+    height: 30vh;
+    background-color: rgb(206, 202, 202);
+    display: flex;
+    justify-content: space-between;
+    padding:10vh 5vw 5vh 5vw ;
+}
