@@ -391,13 +391,13 @@ padding-left:26%;
 
 .owl-carousel {
     margin: 0;
-    padding: 0;
+    padding-top:10px;
     transition: 3s;
     z-index: -99;
 }
 
 .owl-carousel img {
-    height: 60vh;
+    height: 67vh;
     width: 60vw;
     margin: 0;
     padding: 0;
