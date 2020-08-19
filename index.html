@@ -2,105 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Pizza</title>
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <script src="https://kit.fontawesome.com/7e14270fdf.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Pizza</title>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel='stylesheet' type='text/css' href='css/style.css'>
+  <script src="https://kit.fontawesome.com/7e14270fdf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class='header_top'>
-        <div class='header_content'>
-            <a href=''><img src='img/ostrich.jpg' class="header_logo" alt='logo'></a>
-            <div class='header_content_text'>
-                <p class='titel'><span>Momo Pizza</span><br>Pizza №1 v Praze</p>
-            </div>
-            <div class='header_top_rozvoz'>
-                <p> Rozvoz pizzy do vašeho města <a href='#'>Praha</a></p>
-                <p class='phone'>777-66-55</p>
-            </div>
-        </div>
-        <div><button class='btn_header' value='Přihlášení' onclick="document.getElementById('id01').style.display='block'">Přihlášení</button></div>
+  <div class='header_top'>
+    <div class='header_content'>
+      <a href=''><img src='img/ostrich.jpg' class="header_logo" alt='logo'></a>
+      <div class='header_content_text'>
+        <p class='titel'><span>Momo Pizza</span><br>Pizza №1 v Praze</p>
+      </div>
+    <div class='header_top_rozvoz'>
+        <p> Rozvoz pizzy do vašeho města <a href='#'>Praha</a></p>
+        <p class='phone'>777-66-55</p>
     </div>
+    </div>
+    <div><button class='btn_header' value='Přihlášení' onclick="document.getElementById('id01').style.display='block'">Přihlášení</button></div>
+  </div>
    
     <!--Form for Login-->
     <!-- Modal popup -->
     <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть модальный">&times;</span>
-        <!-- Modal content -->
-        <form class="modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-                <img src="img/ostrich.jpg" alt="Аватар" class="avatar">
-            </div>
-
-            <div class="container">
-                <label for="uname"><b>User</b></label>
-                <input type="text" placeholder="Add your name" name="uname" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Add your password" name="psw" required>
-
-                <button class='btnModal btn_singin' type="submit">Sing in</button>
-                <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btnModal">Отменить</button>
-                <span class="psw">Forgot <a href="#">your password?</a></span>
-            </div>
-        </form>
-    </div>
-    <div class='wrap_sticky'>
-        <ul>
-            <a href='#'>
-                <li>Kombo</li>
-            </a>
-            <a href='#'>
-                <li>Pizza</li>
-            </a>
-            <a href='#'>
-                <li>Občerstvení</li>
-            </a>
-            <a href='#'>
-                <li>Dezerty</li>
-            </a>
-            <a href='#'>
-                <li>Nápoje</li>
-            </a>
-            <a href='#'>
-                <li>Jiné zboží</li>
-            </a>
-            <a href='#'>
-                <li>Akce</li>
-            </a>
-            <a href='#'>
-                <li>Kontakty</li>
-            </a>
-            <a href='#'>
-                <li>O nás</li>
-            </a>
-
-        </ul>
-
-        <div>
-            <button id='kosik' class='btn_header_nav'>
-                <span id='kosik-count'>0</span> St
-                <br>
-                <span id='kosik-price'>0</span> Kč
-                <br>
-                <i class="fas fa-cart-arrow-down"></i> 
-                Kosik
-            </button>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть модальный">&times;</span>
+    <!-- Modal content -->
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <img src="img/ostrich.jpg" alt="Аватар" class="avatar">
         </div>
+        <div class="container">
+          <label for="uname"><b>User</b></label>
+          <input type="text" placeholder="Add your name" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Add your password" name="psw" required>
+
+          <button class='btnModal btn_singin' type="submit">Sing in</button>
+          <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btnModal">Отменить</button>
+          <span class="psw">Forgot <a href="#">your password?</a></span>
+        </div>
+      </form>
     </div>
+    <!--Popup for Kosik-->
+    
+<div class='kosik_popup' id='kosik_modal'>
+    <div class='kosik_container'>
+        <h2>Your items:</h2>
+      <div class='kosik_popup_items'></div>
+      <div class='kosik_popup_price'></div>
+      <div class='kosik_popup_count'></div>
+      <button class='kosik_popup_close all'>Close</button>
+      <button class='kosik_popup_next all'>Next</button>
+    </div></div>
+
+    <!--Sticky-menu-->
+    <div class='wrap_sticky'>
+  <ul>
+    <a href='#'>
+        <li>Kombo</li>
+    </a>
+    <a href='#'>
+        <li>Pizza</li>
+    </a>
+    <a href='#'>  
+        <li>Občerstvení</li>
+    </a>
+    <a href='#'>
+        <li>Dezerty</li>
+    </a>
+    <a href='#'>
+        <li>Nápoje</li>
+    </a>
+    <a href='#'>
+        <li>Jiné zboží</li>
+    </a>
+    <a href='#'>
+        <li>Akce</li>
+    </a>
+    <a href='#'>
+        <li>Kontakty</li>
+    </a>
+    <a href='#'>
+        <li>O nás</li>
+    </a>
+
+  </ul>
+
+
+    <div>
+        <button id='kosik' class='btn_header_nav'>
+            <span id='kosik-count'>0</span> St
+            <br>
+            <span id='kosik-price'>0</span> Kč
+            <br>
+            <i class="fas fa-cart-arrow-down"></i> 
+            Kosik
+        </button>
+    </div>
+</div>
+
     <main>
         <section>
             <div class="owl-carousel">

@@ -16,14 +16,22 @@ $(document).ready(function() {
 });
 // Get this modal window
 var modal = document.getElementById('id01');
-
-
 window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     }
-  
+
+    /*--open/close popup for kosik--*/
+$('.btn_header_nav').click((event)=>{
+    $('.kosik_popup').toggleClass('close_open');
+});
+
+/*--close popup kosik's items--*/
+$('.kosik_popup_close').click((event)=>{
+$('.kosik_popup').css('display','none')
+});
+
 $('.main_items_footer>.btn_main_items').click((event) => {
     // Извлекаем внутренний HTML кноки
     // Пример: 235 Kč
