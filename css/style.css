@@ -317,15 +317,15 @@ span.psw {
 
 .btn_header_nav {
     padding: 11px 15px 6px 13px;
-    background-color: rgba(179, 250, 183, 0.685);
+    background-color: rgba(255, 255, 255, 0.685);
     width: 130px;
     border-radius: 10px;
-    border: 1px solid rgb(216, 247, 208);
-    box-shadow: grey 3px 3px 3px;
+    border: 2px solid rgb(250, 222, 147);
     font-size: 14px;
     cursor: pointer;
     margin-right: 5px;
     outline: none;
+    overflow: hidden;
 }
 
 .btn_header_nav:hover {
@@ -564,13 +564,18 @@ footer{
     display: flex;
     flex-direction: column;
     
-
 }
+
 .structure a{
     display: inline-block;
     color:black;
     margin:1vh;
     font-weight: 600;
+    text-decoration: none;
+}
+.footer_first_child{
+    font-size: 19px;
+    
 }
 .apps img{
     height: 90px;
