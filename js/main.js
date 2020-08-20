@@ -22,14 +22,14 @@ window.onclick = function(event) {
         }
     }
 
-    /*--open/close popup for kosik--*/
-$('.btn_header_nav').click((event)=>{
-    $('.kosik_popup').toggleClass('close_open');
+/*--open/close popup for kosik--*/
+$('.btn_header_nav').click(() => {
+  $('.kosik_popup').toggleClass('close_open');
 });
 
 /*--close popup kosik's items--*/
-$('.kosik_popup_close').click((event)=>{
-$('.kosik_popup').css('display','none')
+$('.kosik_popup_close').click(() => {
+  $('.kosik_popup').toggleClass('close_open');
 });
 
 $('.main_items_footer>.btn_main_items').click((event) => {
