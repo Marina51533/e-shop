@@ -72,3 +72,4 @@ $('.popular .items > .btn_popular').click((event) => {
     $('#kosik-price').html(kosikPrice);
     $('#kosik-count').html(kosikCount);
   });
+
